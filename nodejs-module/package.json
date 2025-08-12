@@ -8,6 +8,7 @@
         "test": "node test/test.js",
         "test:simple": "node scripts/simple-test.js",
         "test:evaluation": "node scripts/evaluation-test.js",
+        "test:custom": "node scripts/test_custom_metrics.js",
         "example": "node scripts/example-usage.js"
     },
     "bin": {
