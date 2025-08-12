@@ -1,0 +1,41 @@
+{
+    "name": "ragas-js",
+    "version": "1.0.0",
+    "description": "Node.js wrapper for the Ragas Python library",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "node bin/install-python-deps.js",
+        "test": "node test/test.js",
+        "test:simple": "node scripts/simple-test.js",
+        "test:evaluation": "node scripts/evaluation-test.js",
+        "example": "node scripts/example-usage.js"
+    },
+    "bin": {
+        "ragas-setup": "bin/install-python-deps.js"
+    },
+    "keywords": [
+        "ragas",
+        "llm",
+        "evaluation",
+        "ai",
+        "rag"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "node-pty": "^0.10.1"
+    },
+    "peerDependencies": {
+        "python3": ">=3.9.0"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [
+        "index.js",
+        "lib/",
+        "bin/",
+        "scripts/",
+        "test/"
+    ]
+}
